@@ -1,4 +1,4 @@
-name: Deploy SecBullion-New Screen
+name: Deploy SecJewelleryNew Screen
 
 on:
   push:
@@ -39,8 +39,8 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo mkdir -p /var/www/html/TV_Screens/SecBullion-New
-            sudo chown -R ubuntu:ubuntu /var/www/html/TV_Screens/SecBullion-New
+            sudo mkdir -p /var/www/html/TV_Screens/SecJewelleryNew
+            sudo chown -R ubuntu:ubuntu /var/www/html/TV_Screens/SecJewelleryNew
 
       # 5. Upload new build
       - name: Upload build files
@@ -50,7 +50,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "dist/*"
-          target: "/var/www/html/TV_Screens/SecBullion-New"
+          target: "/var/www/html/TV_Screens/SecJewelleryNew"
           strip_components: 1
 
       # 6. Fix permissions
@@ -61,8 +61,8 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo find /var/www/html/TV_Screens/SecBullion-New -type d -exec chmod 755 {} \;
-            sudo find /var/www/html/TV_Screens/SecBullion-New -type f -exec chmod 644 {} \;
+            sudo find /var/www/html/TV_Screens/SecJewelleryNew -type d -exec chmod 755 {} \;
+            sudo find /var/www/html/TV_Screens/SecJewelleryNew -type f -exec chmod 644 {} \;
 
       # 7. Reload Nginx
       - name: Reload Nginx
