@@ -260,14 +260,16 @@ function TvScreen() {
           flexDirection="column"
           justifyContent="spaceBetween"
           padding="1vw"
-          gap="3vw"        >
+          gap="3vw"
+        >
           <Box
             sx={{
-           display: "flex",
-           gap: "1vw",
-           width: "100%",
-           alignItems: "center",
-           justifyContent: "space-between",
+              display: "flex",
+              gap: "1vw",
+              mb: "2.5vw",
+              width: "100%",
+              alignItems: "center",
+              justifyContent: "space-between",
             }}
           >
             <Box
