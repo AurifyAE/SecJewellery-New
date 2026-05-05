@@ -286,18 +286,16 @@ function TvScreen() {
 
           <CommodityTable items={commodities} />
           {/* <BarSlider /> */}
-
         </Grid>
 
         {/* Side: SpotRate & Date Time */}
         <Grid xs={12} md={6} padding="1vw" gap="3vw" display="grid">
           <WorldClockHorizontal />
           <SpotRate />
-          
+
           {/* <DubaiClock />
 
           <PoweredByAurify /> */}
-
         </Grid>
 
         <Grid
