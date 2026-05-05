@@ -293,8 +293,9 @@ function TvScreen() {
           <WorldClockHorizontal />
           <SpotRate />
           {/* <DubaiClock />
-          <PoweredByAurify /> */}
           
+          <PoweredByAurify /> */}
+
         </Grid>
 
         <Grid
