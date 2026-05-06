@@ -8,16 +8,16 @@ const clockConfig = [
     flag: "/images/hongkong.png",
   },
   {
-    key: "chicago",
-    label: "CHICAGO",
-    timeZone: "America/Chicago",
-    flag: "/images/chicago.png",
-  },
-  {
     key: "london",
     label: "LONDON",
     timeZone: "Europe/London",
     flag: "/images/uk.png",
+  },
+  {
+    key: "chicago",
+    label: "CHICAGO",
+    timeZone: "America/Chicago",
+    flag: "/images/chicago.png",
   },
 ];
 
