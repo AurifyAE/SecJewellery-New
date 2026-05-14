@@ -235,6 +235,40 @@ function TvScreen() {
           }}
         />
       </Box>
+      <Box
+        sx={{
+          position: "fixed",
+          left: "00%",
+          bottom: "0%",
+          height: "100%", // better than %
+          width: "100%", // better than %
+          pointerEvents: "none",
+          overflow: "hidden",
+          opacity: 0.2,
+          transform: "scaleX(-1)",
+          zIndex: 1,
+        }}
+      >
+        <Box
+          component="video"
+          src="/videos/background.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            position: "absolute",
+            top: 0,
+            left: 0,
+     
+          }}
+        >
+          <source src="/videos/background.mp4" type="video/mp4" />
+        </Box>
+      </Box>
 
       {/* Grid */}
 
@@ -262,7 +296,6 @@ function TvScreen() {
           padding="1vw"
           gap="3vw"
         >
-          
           <Box
             sx={{
               display: "flex",

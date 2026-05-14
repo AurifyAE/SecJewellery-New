@@ -257,10 +257,10 @@ const SpotRate = () => {
         border: ".1vw solid rgba(238, 226, 215, 0.55)",
         borderRadius: "4vw",
         backdropFilter: "blur(0.2vw)",
-        background: "rgba(255, 255, 255, 0.1)",
+        background: "#fff8f224",
         overflow: "hidden",
         gap: { xs: "1.6vw", sm: "0.5vw", md: "3vw" },
-        boxShadow: '0px 0px 25px rgba(255, 255, 255, 0.25) inset',
+        boxShadow: '0px 0px 25px #D2B7A1 inset',
         padding: { xs: " 2vw 3vw", sm: " 0.5vw 2vw", md: "2.5vw 2vw" },
       }}
     >
